@@ -5,20 +5,20 @@
 class Rhizome < Formula
   desc ""
   homepage "https://github.com/atomicobject/rhizome"
-  version "0.15.0"
+  version "0.17.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.15.0/rhizome_0.15.0_darwin_amd64.tar.gz"
-      sha256 "d819540061d9e7384654aaf0d8622c654fbbe003bdaa1d560311dac83777351b"
+      url "https://github.com/atomicobject/rhizome/releases/download/0.17.0/rhizome_0.17.0_darwin_amd64.tar.gz"
+      sha256 "40025bf4694c18b7bc15a1d3512a16fd936443f76d95759cedd6c296997e772e"
 
       def install
         bin.install "rzm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.15.0/rhizome_0.15.0_darwin_arm64.tar.gz"
-      sha256 "7ee50f995744ba5e934df4a402765e94b9d24b4bdbd0023fb488b0097541083a"
+      url "https://github.com/atomicobject/rhizome/releases/download/0.17.0/rhizome_0.17.0_darwin_arm64.tar.gz"
+      sha256 "da5c08175101ad38c62ad49da3421958d325dd78f2985b67cb9e65af6e9471be"
 
       def install
         bin.install "rzm"
@@ -28,15 +28,15 @@ class Rhizome < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.15.0/rhizome_0.15.0_linux_amd64.tar.gz"
-      sha256 "455396c07712afadf5c635f71a1f22269c0d722c380546e0fe3f32e14fa96ca4"
+      url "https://github.com/atomicobject/rhizome/releases/download/0.17.0/rhizome_0.17.0_linux_amd64.tar.gz"
+      sha256 "6bb74490dde3c7e7b20fe93837f883590919008690fba1dc3f9aa7cece99ff07"
       def install
         bin.install "rzm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.15.0/rhizome_0.15.0_linux_arm64.tar.gz"
-      sha256 "174fbbcd08c98dbeae472e68c8302177e19410d422ef49f0c36fd4b5c042e9dc"
+      url "https://github.com/atomicobject/rhizome/releases/download/0.17.0/rhizome_0.17.0_linux_arm64.tar.gz"
+      sha256 "63166e9da800e7e2ca7629fadb6266154fdb9a202308fd8fd19deb16de532889"
       def install
         bin.install "rzm"
       end
