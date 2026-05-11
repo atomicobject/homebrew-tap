@@ -5,11 +5,11 @@
 class Rhizome < Formula
   desc ""
   homepage "https://github.com/atomicobject/rhizome"
-  version "0.45.1"
+  version "0.46.0"
 
   on_macos do
-    url "https://github.com/atomicobject/rhizome/releases/download/v0.45.1/rhizome_0.45.1_darwin_all.tar.gz"
-    sha256 "45c76e46efa181392a4c25de373e62236b412658f0c7e81b5d581e5e4eaa273d"
+    url "https://github.com/atomicobject/rhizome/releases/download/v0.46.0/rhizome_0.46.0_darwin_all.tar.gz"
+    sha256 "ec4d2c7bb9711a1a16548c4e06cd7625a821da356b2c7b9bd8ba93926b1f254d"
 
     define_method(:install) do
       bin.install "rhizome"
@@ -18,15 +18,15 @@ class Rhizome < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.45.1/rhizome_0.45.1_linux_amd64.tar.gz"
-      sha256 "65c648829ea273d478b40809005682edfb639e591e5df14642cb49bb0253d1a9"
+      url "https://github.com/atomicobject/rhizome/releases/download/v0.46.0/rhizome_0.46.0_linux_amd64.tar.gz"
+      sha256 "c55bb0d885d5c4f2420086ab2c5784c55ff2903164402827a6e95c59c28538ed"
       define_method(:install) do
         bin.install "rzm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.45.1/rhizome_0.45.1_linux_arm64.tar.gz"
-      sha256 "0b452ae48e3da0d3e508e66221b0ce0d4edf63da670fb5c218710f28d8673c73"
+      url "https://github.com/atomicobject/rhizome/releases/download/v0.46.0/rhizome_0.46.0_linux_arm64.tar.gz"
+      sha256 "995d2176d9e93544d8e46235b45ab092b613164a6cf7121772ac7da959cc049e"
       define_method(:install) do
         bin.install "rzm"
       end
