@@ -1,6 +1,6 @@
 cask "rhizome-desktop" do
-  version "0.51.0"
-  sha256 "be5162c88d2da80ad8261e77f92d264cf52056ae8db3bd2807d4152fa4e1a56a"
+  version "0.52.1"
+  sha256 "56c2e4ea9c8335bd4dbe5eb0bbffd8384c654e9653114b331edc8a2f1ccd636d"
 
   url "https://github.com/atomicobject/rhizome/releases/download/v#{version}/Rhizome-macos-arm64.dmg"
   name "Rhizome"
