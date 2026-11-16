@@ -2,25 +2,25 @@
 class Rhizome < Formula
   desc "Repository knowledge graph for agents"
   homepage "https://github.com/atomicobject/rhizome"
-  version "0.52.1"
+  version "0.53.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.52.1/rhizome-darwin-arm64.tar.gz"
-      sha256 "bf361cf320cef366e7bc77a465b44a62e710fb59ea3d20520105717f72b87a2f"
+      url "https://github.com/atomicobject/rhizome/releases/download/v0.53.0/rhizome-darwin-arm64.tar.gz"
+      sha256 "f388a7918a7dd6ee9e411c58bf603da19766f42f90569932f69bc746df81c6de"
     else
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.52.1/rhizome-darwin-amd64.tar.gz"
-      sha256 "1e9bbf1f24bbff08f21042311b3d6babdad14bb24e05376cac1ac8aba98f7321"
+      url "https://github.com/atomicobject/rhizome/releases/download/v0.53.0/rhizome-darwin-amd64.tar.gz"
+      sha256 "ed657329ac6ef56950eca881b03961fc299251989cbcfa939fec9d9684b5d0c3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.52.1/rhizome-linux-arm64.tar.gz"
-      sha256 "2da2a8f2c82f345e187ce7f5c5b620fc97478afc7287a444883f0ea68b6d822b"
+      url "https://github.com/atomicobject/rhizome/releases/download/v0.53.0/rhizome-linux-arm64.tar.gz"
+      sha256 "97f47db433c90d2763c467b9f56affe9afcd846603dd0c46147b378a1a614db9"
     else
-      url "https://github.com/atomicobject/rhizome/releases/download/v0.52.1/rhizome-linux-amd64.tar.gz"
-      sha256 "a9870e09181ef3090c4b4d89b15b104e23ef469137cc6de02adce5303de2aa2d"
+      url "https://github.com/atomicobject/rhizome/releases/download/v0.53.0/rhizome-linux-amd64.tar.gz"
+      sha256 "099e64e92c37f5a78a5136e7774f7078022af3ebf1e6d93db528bc49e7fcbe08"
     end
   end
 
